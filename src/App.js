@@ -1,23 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Practice from './tutorials/00-just-react/1-practice';
+import Error from './tutorials/01-useState/1-Error'
+import Basics from './tutorials/01-useState/2-useState-basic';
+import Array from './tutorials/01-useState/3-Array-Example';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      {/* <Practice /> */}
+      {/* <Error/> */}
+      {/* <Basics /> */}
+      <Array />
     </div>
   );
 }

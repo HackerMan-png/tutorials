@@ -1,0 +1,22 @@
+@use '../util/mixins' as *;
+@use '../util/variables' as *;
+@use '../themes/defaultTheme' as *;
+
+.item {
+  background: $clr-white;
+  @include flex-center;
+  max-width: $fixed-width;
+  margin: 2rem auto;
+  justify-content: space-between;
+  border-radius: $radius;
+  padding: 1rem 2rem;
+  button{
+    background: $clr-red-dark;
+    color: $clr-white;
+  }
+
+  h4, p {
+    font-size: 2rem;
+    margin-bottom: 0;
+  }
+}
