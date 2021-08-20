@@ -1,0 +1,24 @@
+@use '../themes/defaultTheme' as *;
+@use '../util/variables' as *;
+@use '../util/mixins' as *;
+
+.users{
+  @include flex-center;
+  @include center-auto;
+  width: 1200px;
+  flex-wrap: wrap;
+  gap: 10px;
+  li{
+    border: 1px solid $clr-grey-4;
+    width: 170px;
+    text-align: center;
+    padding: 10px;
+    border-radius: 2rem;
+    box-shadow: $light-shadow;
+    img{
+      @include box(110px);
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+}

@@ -265,7 +265,7 @@ h4 {
 }
 
 .item {
-  background: #fff;
+  background: #c5cfd8;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -276,10 +276,64 @@ h4 {
   padding: 1rem 2rem;
 }
 .item button {
+  background: #e26f6f;
+  color: #fff;
+}
+.item button:hover {
   background: #ca1616;
   color: #fff;
 }
 .item h4, .item p {
   font-size: 2rem;
   margin-bottom: 0;
+}
+
+.users {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.users li {
+  border: 1px solid #6c859d;
+  width: 170px;
+  text-align: center;
+  padding: 10px;
+  border-radius: 2rem;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.users li img {
+  width: 110px;
+  height: 110px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 50%;
+}
+
+.spinner {
+  width: 100px;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 50px;
+  padding-top: 100px;
+  border: 3px solid #c5cfd8;
+  border-top-color: #3b85ce;
+  border-radius: 50%;
+  -webkit-animation: spinner 1s linear infinite;
+          animation: spinner 1s linear infinite;
+}
+@-webkit-keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes spinner {
+  to {
+    transform: rotate(360deg);
+  }
 }/*# sourceMappingURL=main.css.map */

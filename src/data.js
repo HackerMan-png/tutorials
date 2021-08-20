@@ -5,3 +5,10 @@ export const data = [
   {id: 4, name: 'My'},
   {id: 5, name: 'John'}
 ]
+
+export const personData = {
+  name: "Jimmy",
+  age: 24,
+  message: "Jimmy John"
+}
+

@@ -3,7 +3,7 @@
 @use '../themes/defaultTheme' as *;
 
 .item {
-  background: $clr-white;
+  background: $clr-grey-8;
   @include flex-center;
   max-width: $fixed-width;
   margin: 2rem auto;
@@ -11,8 +11,12 @@
   border-radius: $radius;
   padding: 1rem 2rem;
   button{
-    background: $clr-red-dark;
+    background: $clr-red-light;
     color: $clr-white;
+    &:hover{
+      background: $clr-red-dark;
+      color: $clr-white;
+    }
   }
 
   h4, p {
